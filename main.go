@@ -18,7 +18,7 @@ import (
 func main() {
 	st := time.Now()
 
-	LogInit(ioutil.Discard, os.Stdout, os.Stdout, os.Stderr, os.Stdout)
+	LogInit(os.Stdout)
 
 	files, err := GetFilesToCompare()
 	if err != nil {
