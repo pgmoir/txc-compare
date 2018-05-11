@@ -12,40 +12,74 @@ import (
 	"strings"
 )
 
+// CompareFiles takes two txc files are compare file existence and file contents
 func CompareFiles(txcs []TxcFile) {
-	lfs, _ := ioutil.ReadDir(GetAllFolder(txcs[0].name))
-	pfs, _ := ioutil.ReadDir(GetAllFolder(txcs[1].name))
+	ltxc, ptxc := txcs[0].name, txcs[1].name
+	lfs, _ := ioutil.ReadDir(GetAllFolder(ltxc))
+	pfs, _ := ioutil.ReadDir(GetAllFolder(ptxc))
 
 	ct, lfi, pfi := len(lfs)+len(pfs), 0, 0
 	for ct > 0 {
 		lf := lfs[lfi]
 		pf := pfs[pfi]
 		if lf.Name() < pf.Name() {
-			UniqueTransXChange(txcs[0].name, lf, true)
-			ct = ct - 1
-			lfi = lfi + 1
+			FileAddedToTxc(ltxc, lf.Name(), &ct, &lfi)
 		} else if lf.Name() > pf.Name() {
-			UniqueTransXChange(txcs[1].name, pf, false)
-			ct = ct - 1
-			pfi = pfi + 1
+			FileDroppedFromTxc(ptxc, pf.Name(), &ct, &pfi)
 		} else {
-			CompareTransXChange(txcs[0].name, txcs[1].name, lf, pf, true)
-			ct = ct - 2
-			lfi = lfi + 1
-			pfi = pfi + 1
+			CompareMatchedFilesInTxc(ltxc, ptxc, lf, pf, &ct, &lfi, &pfi)
 		}
 	}
 	fmt.Println("Finished")
 }
 
-func UniqueTransXChange(d string, f os.FileInfo, add bool) {
-	if add {
-		Compare.Printf("%s has been added", f.Name())
-	} else {
-		Compare.Printf("%s has been dropped", f.Name())
-	}
-	FileDetails(d, f.Name())
+// FileAddedToTxc details files added to transxchange data
+func FileAddedToTxc(d, f string, ct, lfi *int) {
+	*ct = *ct - 1
+	*lfi = *lfi + 1
+	LogUniqueFile("added", d, f)
+}
+
+// FileDroppedFromTxc details files dropped from transxchange data
+func FileDroppedFromTxc(d, f string, ct, pfi *int) {
+	*ct = *ct - 1
+	*pfi = *pfi + 1
+	LogUniqueFile("dropped", d, f)
+}
+
+// LogUniqueFile includes log of files added and dropped
+func LogUniqueFile(s, d, f string) {
+	Compare.Printf("%s has been %s", f, s)
+	FileDetails(d, f)
 	Compare.Println("")
+	Compare.Println("=====================================")
+	Compare.Println("")
+}
+
+// CompareMatchedFilesInTxc checks for differences between files with matching names in different txc
+func CompareMatchedFilesInTxc(ld, pd string, lf, pf os.FileInfo, ct, lfi, pfi *int) {
+	*ct = *ct - 2
+	*lfi = *lfi + 1
+	*pfi = *pfi + 1
+
+	if FileEquals(ld, pd, lf) {
+		return
+	}
+
+	fmt.Println(lf.Name())
+
+	ltxc := GetTxc(ld, lf)
+	ptxc := GetTxc(pd, pf)
+
+	Compare.Printf("%s has changed (size and content: from %d to %d bytes)", lf.Name(), pf.Size(), lf.Size())
+	Compare.Println("")
+
+	CompareStopPoints(ptxc.StopPoints.StopPointList, ltxc.StopPoints.StopPointList)
+	CompareRouteSections(ptxc.RouteSections.RouteSectionList, ltxc.RouteSections.RouteSectionList)
+	CompareRoutes(ptxc.Routes.RouteList, ltxc.Routes.RouteList)
+	CompareOperators(ptxc.Operators.OperatorList, ltxc.Operators.OperatorList)
+	CompareServices(ptxc.Services.ServiceList, ltxc.Services.ServiceList)
+
 	Compare.Println("=====================================")
 	Compare.Println("")
 }
@@ -320,32 +354,6 @@ func CompareServices(a, b []Service) {
 		}
 	}
 	return
-}
-
-func CompareTransXChange(ld, pd string, lf, pf os.FileInfo, size bool) {
-	if FileEquals(ld, pd, lf) {
-		return
-	}
-
-	fmt.Println(lf.Name())
-
-	ltxc := GetTxc(ld, lf)
-	ptxc := GetTxc(pd, pf)
-
-	if size {
-		Compare.Printf("%s has changed (size and content: from %d to %d bytes)", lf.Name(), pf.Size(), lf.Size())
-	} else {
-		Compare.Printf("%s has changed (content only: from %d to %d bytes)", lf.Name(), pf.Size(), lf.Size())
-	}
-	Compare.Println("")
-
-	CompareStopPoints(ptxc.StopPoints.StopPointList, ltxc.StopPoints.StopPointList)
-	CompareRouteSections(ptxc.RouteSections.RouteSectionList, ltxc.RouteSections.RouteSectionList)
-	CompareRoutes(ptxc.Routes.RouteList, ltxc.Routes.RouteList)
-	CompareOperators(ptxc.Operators.OperatorList, ltxc.Operators.OperatorList)
-	CompareServices(ptxc.Services.ServiceList, ltxc.Services.ServiceList)
-	Compare.Println("=====================================")
-	Compare.Println("")
 }
 
 func FileDetails(d, name string) {
