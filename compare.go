@@ -122,11 +122,11 @@ func CompareStopPoints(a, b []StopPoint) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			ct = ct - 1
 			bIndex = bIndex + 1
@@ -162,12 +162,12 @@ func CompareRouteSections(a, b []RouteSection) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
@@ -205,12 +205,12 @@ func CompareRouteLinks(a, b []RouteLink) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
@@ -247,12 +247,12 @@ func CompareRoutes(a, b []Route) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
@@ -289,12 +289,12 @@ func CompareOperators(a, b []Operator) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
@@ -331,12 +331,12 @@ func CompareServices(a, b []Service) {
 			bItem = b[bIndex]
 		}
 		comparison, comments := aItem.ComparedTo(bItem)
-		if comparison == Added {
+		if comparison == Removed {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1
 			aIndex = aIndex + 1
-		} else if comparison == Removed {
+		} else if comparison == Added {
 			Compare.Println(comments[0])
 			Compare.Println("")
 			ct = ct - 1

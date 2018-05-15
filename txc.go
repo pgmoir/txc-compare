@@ -53,11 +53,11 @@ func (s StopPoint) ComparedTo(sc StopPoint) (Comparison, []string) {
 	typename := "StopPoint"
 	comments := []string{}
 	if s.ID < sc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", s.ID, typename, s.Descriptor.CommonName))
-		return Added, comments
-	} else if s.ID > sc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", sc.ID, typename, sc.Descriptor.CommonName))
+		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", s.ID, typename, s.Descriptor.CommonName))
 		return Removed, comments
+	} else if s.ID > sc.ID {
+		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", sc.ID, typename, sc.Descriptor.CommonName))
+		return Added, comments
 	} else {
 		if s.IsSame(sc) {
 			//comments = append(comments, fmt.Sprintf("%s : %s is same", s, typename))
@@ -136,11 +136,11 @@ func (rs RouteSection) ComparedTo(rsc RouteSection) (Comparison, []string) {
 	typename := "RouteSection"
 	comments := []string{}
 	if rs.GetID() < rsc.GetID() {
-		comments = append(comments, fmt.Sprintf("%s : %s has been added", rs.ID, typename))
-		return Added, comments
-	} else if rs.GetID() > rsc.GetID() {
-		comments = append(comments, fmt.Sprintf("%s : %s has been dropped", rsc.ID, typename))
+		comments = append(comments, fmt.Sprintf("%s : %s has been dropped", rs.ID, typename))
 		return Removed, comments
+	} else if rs.GetID() > rsc.GetID() {
+		comments = append(comments, fmt.Sprintf("%s : %s has been added", rsc.ID, typename))
+		return Added, comments
 	} else {
 
 		if rs.IsSame(rsc) {
@@ -158,11 +158,11 @@ func (rl RouteLink) ComparedTo(rlc RouteLink) (Comparison, []string) {
 	typename := "RouteLink"
 	comments := []string{}
 	if rl.GetID() < rlc.GetID() {
-		comments = append(comments, fmt.Sprintf("   %s : %s has been added (from \"%s\" to \"%s\")", rl.Base, typename, rl.From.StopPointRef, rl.To.StopPointRef))
-		return Added, comments
-	} else if rl.GetID() > rlc.GetID() {
-		comments = append(comments, fmt.Sprintf("   %s : %s has been dropped (from \"%s\" to \"%s\")", rlc.Base, typename, rlc.From.StopPointRef, rlc.To.StopPointRef))
+		comments = append(comments, fmt.Sprintf("   %s : %s has been dropped (from \"%s\" to \"%s\")", rl.Base, typename, rl.From.StopPointRef, rl.To.StopPointRef))
 		return Removed, comments
+	} else if rl.GetID() > rlc.GetID() {
+		comments = append(comments, fmt.Sprintf("   %s : %s has been added (from \"%s\" to \"%s\")", rlc.Base, typename, rlc.From.StopPointRef, rlc.To.StopPointRef))
+		return Added, comments
 	} else {
 
 		if rl.IsSame(rlc) {
@@ -249,11 +249,11 @@ func (r Route) ComparedTo(rc Route) (Comparison, []string) {
 	typename := "Route"
 	comments := []string{}
 	if r.ID < rc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", r.ID, typename, r.Description))
-		return Added, comments
-	} else if r.ID > rc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", rc.ID, typename, rc.Description))
+		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", r.ID, typename, r.Description))
 		return Removed, comments
+	} else if r.ID > rc.ID {
+		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", rc.ID, typename, rc.Description))
+		return Added, comments
 	} else {
 
 		if r.IsSame(rc) {
@@ -298,11 +298,11 @@ func (o Operator) ComparedTo(oc Operator) (Comparison, []string) {
 	typename := "Operator"
 	comments := []string{}
 	if o.ID < oc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", o.ID, typename, o.OperatorNameOnLicence))
-		return Added, comments
-	} else if o.ID > oc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", oc.ID, typename, oc.OperatorNameOnLicence))
+		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", o.ID, typename, o.OperatorNameOnLicence))
 		return Removed, comments
+	} else if o.ID > oc.ID {
+		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", oc.ID, typename, oc.OperatorNameOnLicence))
+		return Added, comments
 	} else {
 
 		if o.IsSame(oc) {
@@ -351,11 +351,11 @@ func (s Service) ComparedTo(sc Service) (Comparison, []string) {
 	typename := "Service"
 	comments := []string{}
 	if s.ID < sc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", s.ID, typename, s.Description))
-		return Added, comments
-	} else if s.ID > sc.ID {
-		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", sc.ID, typename, sc.Description))
+		comments = append(comments, fmt.Sprintf("%s : %s has been dropped (%s)", s.ID, typename, s.Description))
 		return Removed, comments
+	} else if s.ID > sc.ID {
+		comments = append(comments, fmt.Sprintf("%s : %s has been added (%s)", sc.ID, typename, sc.Description))
+		return Added, comments
 	} else {
 		s.OperatingPeriod.StartDate = sb(s.OperatingPeriod.StartDate)
 		sc.OperatingPeriod.StartDate = sb(sc.OperatingPeriod.StartDate)

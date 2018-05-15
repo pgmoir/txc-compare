@@ -1,0 +1,1831 @@
+Comparing transxchange data
+
+The purpose of this log file is to highlight the changes that have occurred from one version of the transxchange data to another.
+This will more than likely be a comparison of the latest with the previous, but it can be run against any versions.
+It only compares changes in data elements that are used for importing so NptgLocalities, JourneyPatternSections and VehicleJourneys wont be included.
+Where a whole file is added or removed, then only the core service description is included.
+Where a file is altered, then changes down to property level are described.
+Any suggestions for change should be emailed to philmoir@tfl.gov.uk.
+
+Compare of transxchange_20180515.zip with transxchange_20180508.zip on 15-05-2018 15:33:56
+==========================================
+
+nrc_90-118-_-r08-1.txt has changed (size and content: from 3936 to 3936 bytes)
+
+4900HTRWTM41 : StopPoint has been dropped (Heathrow Terminal 4)
+9100HTRWTM40 : StopPoint has been added (Heathrow Terminal 4)
+RS_90-118-_-r08-1-H-02 : RouteSection is different
+
+   RL_90-118-_-r08-1-H-2-08 : RouteLink is different
+   To changed from "4900HTRWTM41" to "9100HTRWTM40"
+
+RS_90-118-_-r08-1-H-03 : RouteSection is different
+
+   RL_90-118-_-r08-1-H-3-01 : RouteLink is different
+   To changed from "4900HTRWTM41" to "9100HTRWTM40"
+
+RS_90-118-_-r08-1-R-04 : RouteSection is different
+
+   RL_90-118-_-r08-1-R-4-01 : RouteLink is different
+   From changed from "4900HTRWTM41" to "9100HTRWTM40"
+
+RS_90-118-_-r08-1-R-05 : RouteSection is different
+
+   RL_90-118-_-r08-1-R-5-01 : RouteLink is different
+   From changed from "4900HTRWTM41" to "9100HTRWTM40"
+
+=====================================
+
+nrc_90-178-C-r08-1.txt has changed (size and content: from 15178 to 13814 bytes)
+
+RS_90-178-C-r08-1-H-04 : RouteSection is different
+
+   RL_90-178-C-r08-1-H-4-01 : RouteLink is different
+   From changed from "9100HIGBYA3" to "9100DALS0"
+   To changed from "9100CNNB2" to "9100HAGGERS1"
+
+   RL_90-178-C-r08-1-H-4-02 : RouteLink is different
+   From changed from "9100CNNB2" to "9100HAGGERS1"
+   To changed from "9100DALS0" to "9100HOXTON1"
+
+   RL_90-178-C-r08-1-H-4-03 : RouteLink is different
+   From changed from "9100DALS0" to "9100HOXTON1"
+   To changed from "9100HAGGERS1" to "9100SHRDHST1"
+
+   RL_90-178-C-r08-1-H-4-04 : RouteLink is different
+   From changed from "9100HAGGERS1" to "9100SHRDHST1"
+   To changed from "9100HOXTON1" to "9100WCHAPEL2"
+
+   RL_90-178-C-r08-1-H-4-05 : RouteLink is different
+   From changed from "9100HOXTON1" to "9100WCHAPEL2"
+   To changed from "9100SHRDHST1" to "9100SHADWEL2"
+
+   RL_90-178-C-r08-1-H-4-06 : RouteLink is different
+   From changed from "9100SHRDHST1" to "9100SHADWEL2"
+   To changed from "9100WCHAPEL2" to "9100WAPPING2"
+
+   RL_90-178-C-r08-1-H-4-07 : RouteLink is different
+   From changed from "9100WCHAPEL2" to "9100WAPPING2"
+   To changed from "9100SHADWEL2" to "9100RTHERHI2"
+
+   RL_90-178-C-r08-1-H-4-08 : RouteLink is different
+   From changed from "9100SHADWEL2" to "9100RTHERHI2"
+   To changed from "9100WAPPING2" to "9100CNDAW2"
+
+   RL_90-178-C-r08-1-H-4-09 : RouteLink is different
+   From changed from "9100WAPPING2" to "9100CNDAW2"
+   To changed from "9100RTHERHI2" to "9100SURREYQ2"
+
+   RL_90-178-C-r08-1-H-4-10 : RouteLink is different
+   From changed from "9100RTHERHI2" to "9100SURREYQ2"
+   To changed from "9100CNDAW2" to "9100PCKHMQD0"
+
+   RL_90-178-C-r08-1-H-4-11 : RouteLink is different
+   From changed from "9100CNDAW2" to "9100PCKHMQD0"
+   To changed from "9100SURREYQ2" to "9100PKHMRYC1"
+
+   RL_90-178-C-r08-1-H-4-12 : RouteLink is different
+   From changed from "9100SURREYQ2" to "9100PKHMRYC1"
+   To changed from "9100PCKHMQD0" to "9100DENMRKH1"
+
+   RL_90-178-C-r08-1-H-4-13 : RouteLink is different
+   From changed from "9100PCKHMQD0" to "9100DENMRKH1"
+   To changed from "9100PKHMRYC1" to "9100CLPHHS0"
+
+   RL_90-178-C-r08-1-H-4-14 : RouteLink is different
+   From changed from "9100PKHMRYC1" to "9100CLPHHS0"
+   To changed from "9100DENMRKH1" to "9100WNDSWRD1"
+
+   RL_90-178-C-r08-1-H-4-15 : RouteLink is different
+   From changed from "9100DENMRKH1" to "9100WNDSWRD1"
+   To changed from "9100CLPHHS0" to "9100BATRSPK1"
+
+   RL_90-178-C-r08-1-H-4-16 : RouteLink has been dropped (from "9100CLPHHS0" to "9100WNDSWRD1")
+
+   RL_90-178-C-r08-1-H-4-17 : RouteLink has been dropped (from "9100WNDSWRD1" to "9100BATRSPK1")
+
+RS_90-178-C-r08-1-H-5 : RouteSection has been dropped
+
+RS_90-178-C-r08-1-R-5 : RouteSection has been added
+
+RS_90-178-C-r08-1-R-06 : RouteSection is different
+
+   RL_90-178-C-r08-1-R-6-8 : RouteLink has been added (from "9100CNDAW1" to "9100RTHERHI1")
+
+   RL_90-178-C-r08-1-R-6-9 : RouteLink has been added (from "9100RTHERHI1" to "9100WAPPING1")
+
+   RL_90-178-C-r08-1-R-6-10 : RouteLink has been added (from "9100WAPPING1" to "9100SHADWEL1")
+
+RS_90-178-C-r08-1-R-07 : RouteSection is different
+
+   RL_90-178-C-r08-1-R-7-11 : RouteLink has been added (from "9100SHADWEL1" to "9100WCHAPEL1")
+
+   RL_90-178-C-r08-1-R-7-12 : RouteLink has been added (from "9100WCHAPEL1" to "9100SHRDHST0")
+
+   RL_90-178-C-r08-1-R-7-13 : RouteLink has been added (from "9100SHRDHST0" to "9100HOXTON0")
+
+   RL_90-178-C-r08-1-R-7-14 : RouteLink has been added (from "9100HOXTON0" to "9100HAGGERS0")
+
+   RL_90-178-C-r08-1-R-7-15 : RouteLink has been added (from "9100HAGGERS0" to "9100DALS0")
+
+RS_90-178-C-r08-1-R-08 : RouteSection is different
+
+   RL_90-178-C-r08-1-R-8-16 : RouteLink has been added (from "9100DALS0" to "9100CNNB1")
+
+   RL_90-178-C-r08-1-R-8-17 : RouteLink has been added (from "9100CNNB1" to "9100HIGBYA3")
+
+RS_90-178-C-r08-1-R-09 : RouteSection is different
+
+   RL_90-178-C-r08-1-R-9-01 : RouteLink is different
+   From changed from "9100CLPHMJ1" to "9100BATRSPK1"
+
+   RL_90-178-C-r08-1-R-9-16 : RouteLink has been dropped (from "9100DALS0" to "9100CNNB1")
+
+   RL_90-178-C-r08-1-R-9-17 : RouteLink has been dropped (from "9100CNNB1" to "9100HIGBYA3")
+
+RS_90-178-C-r08-1-R-10 : RouteSection is different
+
+   RL_90-178-C-r08-1-R-10-16 : RouteLink has been added (from "9100DALS0" to "9100CNNB1")
+
+   RL_90-178-C-r08-1-R-10-17 : RouteLink has been added (from "9100CNNB1" to "9100HIGBYA3")
+
+RS_90-178-C-r08-1-R-11 : RouteSection has been dropped
+
+R_90-178-C-r08-1-H-4 : Route is different
+Description changed from "Highbury & Islington Station - Battersea Park Station" to "Dalston Junction Station - Battersea Park Station"
+
+R_90-178-C-r08-1-H-5 : Route has been dropped (Dalston Junction Station - Battersea Park Station)
+
+R_90-178-C-r08-1-R-10 : Route is different
+Description changed from "Battersea Park Station - Dalston Junction Station" to "Battersea Park Station - Highbury & Islington Station"
+
+R_90-178-C-r08-1-R-11 : Route has been dropped (Battersea Park Station - Highbury & Islington Station)
+
+R_90-178-C-r08-1-R-5 : Route has been added (Clapham Junction Station - Canada Water Station)
+
+R_90-178-C-r08-1-R-6 : Route is different
+Description changed from "Clapham Junction Station - Canada Water Station" to "Clapham Junction Station - Shadwell Rail Station"
+
+R_90-178-C-r08-1-R-7 : Route is different
+Description changed from "Clapham Junction Station - Shadwell Rail Station" to "Clapham Junction Station - Dalston Junction Station"
+
+R_90-178-C-r08-1-R-8 : Route is different
+Description changed from "Clapham Junction Station - Dalston Junction Station" to "Clapham Junction Station - Highbury & Islington Station"
+
+R_90-178-C-r08-1-R-9 : Route is different
+Description changed from "Clapham Junction Station - Highbury & Islington Station" to "Battersea Park Station - Dalston Junction Station"
+
+=====================================
+
+nrc_90-5-_-r08-1.txt has changed (size and content: from 8009 to 6663 bytes)
+
+RS_90-5-_-r08-1-H-02 : RouteSection is different
+
+   RL_90-5-_-r08-1-H-2-9 : RouteLink has been added (from "9100CHDWLHT1" to "9100ROMFORD3")
+
+   RL_90-5-_-r08-1-H-2-10 : RouteLink has been added (from "9100ROMFORD3" to "9100GIDEAPK1")
+
+RS_90-5-_-r08-1-H-03 : RouteSection is different
+
+   RL_90-5-_-r08-1-H-3-11 : RouteLink has been added (from "9100GIDEAPK1" to "9100HRLDWOD2")
+
+   RL_90-5-_-r08-1-H-3-12 : RouteLink has been added (from "9100HRLDWOD2" to "9100BRTWOOD2")
+
+   RL_90-5-_-r08-1-H-3-13 : RouteLink has been added (from "9100BRTWOOD2" to "9100SHENFLD1")
+
+RS_90-5-_-r08-1-H-04 : RouteSection is different
+
+   RL_90-5-_-r08-1-H-4-01 : RouteLink is different
+   From changed from "9100LIVST0" to "9100SVNKNGS1"
+   To changed from "9100STFD1" to "9100GODMAYS1"
+
+   RL_90-5-_-r08-1-H-4-02 : RouteLink is different
+   From changed from "9100STFD1" to "9100GODMAYS1"
+   To changed from "9100MRYLAND1" to "9100CHDWLHT1"
+
+   RL_90-5-_-r08-1-H-4-03 : RouteLink is different
+   From changed from "9100MRYLAND1" to "9100CHDWLHT1"
+   To changed from "9100FRSTGT1" to "9100ROMFORD3"
+
+   RL_90-5-_-r08-1-H-4-04 : RouteLink is different
+   From changed from "9100FRSTGT1" to "9100ROMFORD3"
+   To changed from "9100MANRPK0" to "9100GIDEAPK1"
+
+   RL_90-5-_-r08-1-H-4-05 : RouteLink is different
+   From changed from "9100MANRPK0" to "9100GIDEAPK1"
+   To changed from "9100ILFORD2" to "9100HRLDWOD2"
+
+   RL_90-5-_-r08-1-H-4-06 : RouteLink is different
+   From changed from "9100ILFORD2" to "9100HRLDWOD2"
+   To changed from "9100SVNKNGS1" to "9100BRTWOOD2"
+
+   RL_90-5-_-r08-1-H-4-07 : RouteLink is different
+   From changed from "9100SVNKNGS1" to "9100BRTWOOD2"
+   To changed from "9100GODMAYS1" to "9100SHENFLD1"
+
+   RL_90-5-_-r08-1-H-4-8 : RouteLink has been dropped (from "9100GODMAYS1" to "9100CHDWLHT1")
+
+   RL_90-5-_-r08-1-H-4-9 : RouteLink has been dropped (from "9100CHDWLHT1" to "9100ROMFORD3")
+
+   RL_90-5-_-r08-1-H-4-10 : RouteLink has been dropped (from "9100ROMFORD3" to "9100GIDEAPK1")
+
+   RL_90-5-_-r08-1-H-4-11 : RouteLink has been dropped (from "9100GIDEAPK1" to "9100HRLDWOD2")
+
+   RL_90-5-_-r08-1-H-4-12 : RouteLink has been dropped (from "9100HRLDWOD2" to "9100BRTWOOD2")
+
+   RL_90-5-_-r08-1-H-4-13 : RouteLink has been dropped (from "9100BRTWOOD2" to "9100SHENFLD1")
+
+RS_90-5-_-r08-1-H-5 : RouteSection has been dropped
+
+RS_90-5-_-r08-1-R-5 : RouteSection has been added
+
+RS_90-5-_-r08-1-R-06 : RouteSection is different
+
+   RL_90-5-_-r08-1-R-6-01 : RouteLink is different
+   From changed from "9100SHENFLD1" to "9100GIDEAPK1"
+   To changed from "9100BRTWOOD1" to "9100ROMFORD2"
+
+   RL_90-5-_-r08-1-R-6-02 : RouteLink is different
+   From changed from "9100BRTWOOD1" to "9100ROMFORD2"
+   To changed from "9100HRLDWOD1" to "9100CHDWLHT0"
+
+   RL_90-5-_-r08-1-R-6-03 : RouteLink is different
+   From changed from "9100HRLDWOD1" to "9100CHDWLHT0"
+   To changed from "9100GIDEAPK1" to "9100GODMAYS0"
+
+   RL_90-5-_-r08-1-R-6-04 : RouteLink is different
+   From changed from "9100GIDEAPK1" to "9100GODMAYS0"
+   To changed from "9100ROMFORD2" to "9100SVNKNGS0"
+
+   RL_90-5-_-r08-1-R-6-05 : RouteLink is different
+   From changed from "9100ROMFORD2" to "9100SVNKNGS0"
+   To changed from "9100CHDWLHT0" to "9100ILFORD1"
+
+   RL_90-5-_-r08-1-R-6-06 : RouteLink is different
+   From changed from "9100CHDWLHT0" to "9100ILFORD1"
+   To changed from "9100GODMAYS0" to "9100MANRPK1"
+
+   RL_90-5-_-r08-1-R-6-07 : RouteLink is different
+   From changed from "9100GODMAYS0" to "9100MANRPK1"
+   To changed from "9100SVNKNGS0" to "9100FRSTGT0"
+
+   RL_90-5-_-r08-1-R-6-08 : RouteLink is different
+   From changed from "9100SVNKNGS0" to "9100FRSTGT0"
+   To changed from "9100ILFORD1" to "9100MRYLAND0"
+
+   RL_90-5-_-r08-1-R-6-09 : RouteLink is different
+   From changed from "9100ILFORD1" to "9100MRYLAND0"
+   To changed from "9100MANRPK1" to "9100STFD2"
+
+   RL_90-5-_-r08-1-R-6-10 : RouteLink is different
+   From changed from "9100MANRPK1" to "9100STFD2"
+   To changed from "9100FRSTGT0" to "9100LIVST0"
+
+   RL_90-5-_-r08-1-R-6-11 : RouteLink has been dropped (from "9100FRSTGT0" to "9100MRYLAND0")
+
+   RL_90-5-_-r08-1-R-6-12 : RouteLink has been dropped (from "9100MRYLAND0" to "9100STFD2")
+
+   RL_90-5-_-r08-1-R-6-13 : RouteLink has been dropped (from "9100STFD2" to "9100LIVST0")
+
+RS_90-5-_-r08-1-R-07 : RouteSection is different
+
+   RL_90-5-_-r08-1-R-7-01 : RouteLink is different
+   From changed from "9100GIDEAPK1" to "9100STFD2"
+   To changed from "9100ROMFORD2" to "9100LIVST0"
+
+   RL_90-5-_-r08-1-R-7-2 : RouteLink has been dropped (from "9100ROMFORD2" to "9100CHDWLHT0")
+
+   RL_90-5-_-r08-1-R-7-3 : RouteLink has been dropped (from "9100CHDWLHT0" to "9100GODMAYS0")
+
+   RL_90-5-_-r08-1-R-7-4 : RouteLink has been dropped (from "9100GODMAYS0" to "9100SVNKNGS0")
+
+   RL_90-5-_-r08-1-R-7-5 : RouteLink has been dropped (from "9100SVNKNGS0" to "9100ILFORD1")
+
+   RL_90-5-_-r08-1-R-7-6 : RouteLink has been dropped (from "9100ILFORD1" to "9100MANRPK1")
+
+   RL_90-5-_-r08-1-R-7-7 : RouteLink has been dropped (from "9100MANRPK1" to "9100FRSTGT0")
+
+   RL_90-5-_-r08-1-R-7-8 : RouteLink has been dropped (from "9100FRSTGT0" to "9100MRYLAND0")
+
+   RL_90-5-_-r08-1-R-7-9 : RouteLink has been dropped (from "9100MRYLAND0" to "9100STFD2")
+
+   RL_90-5-_-r08-1-R-7-10 : RouteLink has been dropped (from "9100STFD2" to "9100LIVST0")
+
+RS_90-5-_-r08-1-R-8 : RouteSection has been dropped
+
+RS_90-5-_-r08-1-R-9 : RouteSection has been dropped
+
+R_90-5-_-r08-1-H-2 : Route is different
+Description changed from "Liverpool Street Station - Chadwell Heath" to "Liverpool Street Station - Gidea Park"
+
+R_90-5-_-r08-1-H-3 : Route is different
+Description changed from "Liverpool Street Station - Gidea Park" to "Liverpool Street Station - Shenfield Rail Station"
+
+R_90-5-_-r08-1-H-4 : Route is different
+Description changed from "Liverpool Street Station - Shenfield Rail Station" to "Seven Kings - Shenfield Rail Station"
+
+R_90-5-_-r08-1-H-5 : Route has been dropped (Seven Kings - Shenfield Rail Station)
+
+R_90-5-_-r08-1-R-5 : Route has been added (Shenfield Rail Station - Liverpool Street Station)
+
+R_90-5-_-r08-1-R-6 : Route is different
+Description changed from "Shenfield Rail Station - Liverpool Street Station" to "Gidea Park - Liverpool Street Station"
+
+R_90-5-_-r08-1-R-7 : Route is different
+Description changed from "Gidea Park - Liverpool Street Station" to "Stratford Station - Liverpool Street Station"
+
+R_90-5-_-r08-1-R-8 : Route has been dropped (Chadwell Heath - Liverpool Street Station)
+
+R_90-5-_-r08-1-R-9 : Route has been dropped (Stratford Station - Liverpool Street Station)
+
+=====================================
+
+nrc_90-60-_-r08-1.txt has changed (size and content: from 7252 to 5393 bytes)
+
+RS_90-60-_-r08-1-H-01 : RouteSection is different
+
+   RL_90-60-_-r08-1-H-1-4 : RouteLink has been added (from "9100QPRK1" to "9100KENSLG1")
+
+   RL_90-60-_-r08-1-H-1-5 : RouteLink has been added (from "9100KENSLG1" to "9100WLSDNJL1")
+
+   RL_90-60-_-r08-1-H-1-6 : RouteLink has been added (from "9100WLSDNJL1" to "9100HARLSDN1")
+
+   RL_90-60-_-r08-1-H-1-7 : RouteLink has been added (from "9100HARLSDN1" to "9100STNBGPK1")
+
+   RL_90-60-_-r08-1-H-1-8 : RouteLink has been added (from "9100STNBGPK1" to "9100WMBYDC1")
+
+   RL_90-60-_-r08-1-H-1-9 : RouteLink has been added (from "9100WMBYDC1" to "9100NWEMBLY1")
+
+   RL_90-60-_-r08-1-H-1-10 : RouteLink has been added (from "9100NWEMBLY1" to "9100SKENTON1")
+
+   RL_90-60-_-r08-1-H-1-11 : RouteLink has been added (from "9100SKENTON1" to "9100KTON0")
+
+   RL_90-60-_-r08-1-H-1-12 : RouteLink has been added (from "9100KTON0" to "9100HROWDC2")
+
+   RL_90-60-_-r08-1-H-1-13 : RouteLink has been added (from "9100HROWDC2" to "9100HEDSTNL1")
+
+   RL_90-60-_-r08-1-H-1-14 : RouteLink has been added (from "9100HEDSTNL1" to "9100HTCHEND1")
+
+   RL_90-60-_-r08-1-H-1-15 : RouteLink has been added (from "9100HTCHEND1" to "9100CRPNDPK0")
+
+   RL_90-60-_-r08-1-H-1-16 : RouteLink has been added (from "9100CRPNDPK0" to "9100BUSHYDC0")
+
+   RL_90-60-_-r08-1-H-1-17 : RouteLink has been added (from "9100BUSHYDC0" to "9100WATFDHS0")
+
+   RL_90-60-_-r08-1-H-1-18 : RouteLink has been added (from "9100WATFDHS0" to "9100WATFJDC0")
+
+RS_90-60-_-r08-1-H-2 : RouteSection has been dropped
+
+RS_90-60-_-r08-1-H-3 : RouteSection has been dropped
+
+RS_90-60-_-r08-1-R-2 : RouteSection has been added
+
+RS_90-60-_-r08-1-R-4 : RouteSection has been dropped
+
+RS_90-60-_-r08-1-R-5 : RouteSection has been dropped
+
+RS_90-60-_-r08-1-R-6 : RouteSection has been dropped
+
+R_90-60-_-r08-1-H-1 : Route is different
+Description changed from "Euston Station - Queen's Park Station (London)" to "Euston Station - Watford Junction Rail Station"
+
+R_90-60-_-r08-1-H-2 : Route has been dropped (Euston Station - Watford Junction Rail Station)
+
+R_90-60-_-r08-1-H-3 : Route has been dropped (Harrow & Wealdstone Station - Watford Junction Rail Station)
+
+R_90-60-_-r08-1-R-2 : Route has been added (Watford Junction Rail Station - Euston Station)
+
+R_90-60-_-r08-1-R-4 : Route has been dropped (Watford Junction Rail Station - Harrow & Wealdstone Station)
+
+R_90-60-_-r08-1-R-5 : Route has been dropped (Watford Junction Rail Station - Euston Station)
+
+R_90-60-_-r08-1-R-6 : Route has been dropped (Queen's Park Station (London) - Euston Station)
+
+=====================================
+
+nrc_90-62-_-r08-1.txt has changed (size and content: from 7886 to 8362 bytes)
+
+RS_90-62-_-r08-1-H-01 : RouteSection is different
+
+   RL_90-62-_-r08-1-H-1-5 : RouteLink has been added (from "9100STOTNHM0" to "9100BLCHSRD1")
+
+   RL_90-62-_-r08-1-H-1-6 : RouteLink has been added (from "9100BLCHSRD1" to "9100WLTHQRD1")
+
+   RL_90-62-_-r08-1-H-1-7 : RouteLink has been added (from "9100WLTHQRD1" to "9100LEYTNMR0")
+
+   RL_90-62-_-r08-1-H-1-8 : RouteLink has been added (from "9100LEYTNMR0" to "9100LYTNSHR1")
+
+   RL_90-62-_-r08-1-H-1-9 : RouteLink has been added (from "9100LYTNSHR1" to "9100WNSTDPK0")
+
+   RL_90-62-_-r08-1-H-1-10 : RouteLink has been added (from "9100WNSTDPK0" to "9100WDGRNPK1")
+
+   RL_90-62-_-r08-1-H-1-11 : RouteLink has been added (from "9100WDGRNPK1" to "9100BARKING4")
+
+RS_90-62-_-r08-1-H-2 : RouteSection has been dropped
+
+RS_90-62-_-r08-1-R-2 : RouteSection has been added
+
+RS_90-62-_-r08-1-R-03 : RouteSection is different
+
+   RL_90-62-_-r08-1-R-3-8 : RouteLink has been added (from "9100STOTNHM1" to "9100HRGYGL0")
+
+   RL_90-62-_-r08-1-R-3-9 : RouteLink has been added (from "9100HRGYGL0" to "9100CROUCHH0")
+
+   RL_90-62-_-r08-1-R-3-10 : RouteLink has been added (from "9100CROUCHH0" to "9100UPRHLWY1")
+
+RS_90-62-_-r08-1-R-04 : RouteSection is different
+
+   RL_90-62-_-r08-1-R-4-11 : RouteLink has been added (from "9100UPRHLWY1" to "9100GOSPLOK2")
+
+RS_90-62-_-r08-1-R-05 : RouteSection is different
+
+   RL_90-62-_-r08-1-R-5-01 : RouteLink is different
+   From changed from "9100BARKING4" to "9100STOTNHM1"
+   To changed from "9100WDGRNPK0" to "9100HRGYGL0"
+
+   RL_90-62-_-r08-1-R-5-02 : RouteLink is different
+   From changed from "9100WDGRNPK0" to "9100HRGYGL0"
+   To changed from "9100WNSTDPK1" to "9100CROUCHH0"
+
+   RL_90-62-_-r08-1-R-5-03 : RouteLink is different
+   From changed from "9100WNSTDPK1" to "9100CROUCHH0"
+   To changed from "9100LYTNSHR0" to "9100UPRHLWY1"
+
+   RL_90-62-_-r08-1-R-5-04 : RouteLink is different
+   From changed from "9100LYTNSHR0" to "9100UPRHLWY1"
+   To changed from "9100LEYTNMR1" to "9100GOSPLOK2"
+
+   RL_90-62-_-r08-1-R-5-5 : RouteLink has been dropped (from "9100LEYTNMR1" to "9100WLTHQRD0")
+
+   RL_90-62-_-r08-1-R-5-6 : RouteLink has been dropped (from "9100WLTHQRD0" to "9100BLCHSRD0")
+
+   RL_90-62-_-r08-1-R-5-7 : RouteLink has been dropped (from "9100BLCHSRD0" to "9100STOTNHM1")
+
+   RL_90-62-_-r08-1-R-5-8 : RouteLink has been dropped (from "9100STOTNHM1" to "9100HRGYGL0")
+
+   RL_90-62-_-r08-1-R-5-9 : RouteLink has been dropped (from "9100HRGYGL0" to "9100CROUCHH0")
+
+   RL_90-62-_-r08-1-R-5-10 : RouteLink has been dropped (from "9100CROUCHH0" to "9100UPRHLWY1")
+
+   RL_90-62-_-r08-1-R-5-11 : RouteLink has been dropped (from "9100UPRHLWY1" to "9100GOSPLOK2")
+
+RS_90-62-_-r08-1-R-06 : RouteSection is different
+
+   RL_90-62-_-r08-1-R-6-01 : RouteLink is different
+   From changed from "9100STOTNHM1" to "9100BARKING4"
+   To changed from "9100HRGYGL0" to "9100WDGRNPK0"
+
+   RL_90-62-_-r08-1-R-6-02 : RouteLink is different
+   From changed from "9100HRGYGL0" to "9100WDGRNPK0"
+   To changed from "9100CROUCHH0" to "9100WNSTDPK1"
+
+   RL_90-62-_-r08-1-R-6-03 : RouteLink is different
+   From changed from "9100CROUCHH0" to "9100WNSTDPK1"
+   To changed from "9100UPRHLWY1" to "9100LYTNSHR0"
+
+   RL_90-62-_-r08-1-R-6-04 : RouteLink is different
+   From changed from "9100UPRHLWY1" to "9100LYTNSHR0"
+   To changed from "9100GOSPLOK2" to "9100LEYTNMR1"
+
+   RL_90-62-_-r08-1-R-6-5 : RouteLink has been added (from "9100LEYTNMR1" to "9100WLTHQRD0")
+
+   RL_90-62-_-r08-1-R-6-6 : RouteLink has been added (from "9100WLTHQRD0" to "9100BLCHSRD0")
+
+   RL_90-62-_-r08-1-R-6-7 : RouteLink has been added (from "9100BLCHSRD0" to "9100STOTNHM1")
+
+   RL_90-62-_-r08-1-R-6-8 : RouteLink has been added (from "9100STOTNHM1" to "9100HRGYGL0")
+
+   RL_90-62-_-r08-1-R-6-9 : RouteLink has been added (from "9100HRGYGL0" to "9100CROUCHH0")
+
+   RL_90-62-_-r08-1-R-6-10 : RouteLink has been added (from "9100CROUCHH0" to "9100UPRHLWY1")
+
+   RL_90-62-_-r08-1-R-6-11 : RouteLink has been added (from "9100UPRHLWY1" to "9100HMPSTDH0")
+
+R_90-62-_-r08-1-H-1 : Route is different
+Description changed from "Gospel Oak Station - South Tottenham Station" to "Gospel Oak Station - Barking Station"
+
+R_90-62-_-r08-1-H-2 : Route has been dropped (Gospel Oak Station - Barking Station)
+
+R_90-62-_-r08-1-R-2 : Route has been added (Barking Station - South Tottenham Station)
+
+R_90-62-_-r08-1-R-3 : Route is different
+Description changed from "Barking Station - South Tottenham Station" to "Barking Station - Upper Holloway Station"
+
+R_90-62-_-r08-1-R-4 : Route is different
+Description changed from "Barking Station - Upper Holloway Station" to "Barking Station - Gospel Oak Station"
+
+R_90-62-_-r08-1-R-5 : Route is different
+Description changed from "Barking Station - Gospel Oak Station" to "South Tottenham Station - Gospel Oak Station"
+
+R_90-62-_-r08-1-R-6 : Route is different
+Description changed from "South Tottenham Station - Gospel Oak Station" to "Barking Station - Hampstead Heath Station"
+
+=====================================
+
+tfl_1-BAK-_-y05-296311.txt has been dropped
+underground for 1-BAK-_-y05-296311 (route: Elephant & Castle - Oxford Circus - Stonebridge Park) => before to 2018-05-06
+
+=====================================
+
+tfl_1-CEN-_-y05-1495235.txt has been dropped
+underground for 1-CEN-_-y05-1495235 (route: Ealing Broadway/West Ruislip - Liverpool Street - Epping/Hainault/Woodford) => before to 2018-05-07
+
+=====================================
+
+tfl_1-CIR-_-y05-226200.txt has been dropped
+underground for 1-CIR-_-y05-226200 (route: South Kensington - King's Cross St. Pancras (early A.M. only)) => before to 2018-05-07
+
+=====================================
+
+tfl_1-CIR-_-y05-350144.txt has been added
+underground for 1-CIR-_-y05-350144 (route: Hammersmith - King's Cross St. Pancras - Victoria - Edgware Road) => 2018-05-22 to 2018-12-23
+
+=====================================
+
+tfl_1-CIR-_-y05-386233.txt has been dropped
+underground for 1-CIR-_-y05-386233 (route: Baker Street/Barking - Victoria - Edgware Road) => before to 2018-05-14
+
+=====================================
+
+tfl_1-CIR-_-y05-465922.txt has changed (size and content: from 268715 to 225161 bytes)
+
+RS_1-CIR-_-y05-465922-I-5 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-17 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-42 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-44 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-45 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-54 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-62 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-63 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-65 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-66 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-I-67 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-10 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-21 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-26 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-27 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-37 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-41 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-48 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-49 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-52 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-57 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-58 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-69 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-70 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-73 : RouteSection has been dropped
+
+RS_1-CIR-_-y05-465922-O-75 : RouteSection has been dropped
+
+R_1-CIR-_-y05-465922-I-17 : Route has been dropped (Edgware Road (Circle line) Station - Ealing Broadway)
+
+R_1-CIR-_-y05-465922-I-42 : Route has been dropped (Edgware Road (Circle line) Station - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-I-44 : Route has been dropped (Edgware Road (Circle line) Station - Paddington (H&C Line))
+
+R_1-CIR-_-y05-465922-I-45 : Route has been dropped (Edgware Road (Circle line) Station - Hammersmith (Ham & City Line))
+
+R_1-CIR-_-y05-465922-I-5 : Route has been dropped (Edgware Road (Circle line) Station - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-I-54 : Route has been dropped (Barking Station - Aldgate)
+
+R_1-CIR-_-y05-465922-I-62 : Route has been dropped (King's Cross St. Pancras - South Kensington)
+
+R_1-CIR-_-y05-465922-I-63 : Route has been dropped (King's Cross St. Pancras - Aldgate)
+
+R_1-CIR-_-y05-465922-I-65 : Route has been dropped (Paddington - Gloucester Road)
+
+R_1-CIR-_-y05-465922-I-66 : Route has been dropped (Edgware Road (Circle line) Station - Ealing Broadway)
+
+R_1-CIR-_-y05-465922-I-67 : Route has been dropped (Paddington - Ealing Broadway)
+
+R_1-CIR-_-y05-465922-O-10 : Route has been dropped (Edgware Road (Circle line) Station - Barking Station)
+
+R_1-CIR-_-y05-465922-O-21 : Route has been dropped (Edgware Road (Circle line) Station - King's Cross St. Pancras)
+
+R_1-CIR-_-y05-465922-O-26 : Route has been dropped (Hammersmith (Ham & City Line) - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-27 : Route has been dropped (Goldhawk Road - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-37 : Route has been dropped (Acton Town - Aldgate)
+
+R_1-CIR-_-y05-465922-O-41 : Route has been dropped (Barking Station - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-48 : Route has been dropped (Acton Town - Barking Station)
+
+R_1-CIR-_-y05-465922-O-49 : Route has been dropped (High Street Kensington - Barking Station)
+
+R_1-CIR-_-y05-465922-O-52 : Route has been dropped (Edgware Road (Circle line) Station - Barking Station)
+
+R_1-CIR-_-y05-465922-O-57 : Route has been dropped (Aldgate - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-58 : Route has been dropped (South Kensington - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-69 : Route has been dropped (Gloucester Road - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-70 : Route has been dropped (High Street Kensington - Edgware Road (Circle line) Station)
+
+R_1-CIR-_-y05-465922-O-73 : Route has been dropped (Edgware Road (Circle line) Station - King's Cross St. Pancras)
+
+R_1-CIR-_-y05-465922-O-75 : Route has been dropped (Baker Street Station - Aldgate)
+
+1-CIR-_-y05-465922 : Service is different
+EndDate changed from "2018-12-23" to "2018-05-17"
+
+=====================================
+
+tfl_1-DIS-_-y05-1184000.txt has been added
+underground for 1-DIS-_-y05-1184000 (route: Ealing Broadway/Richmond/Wimbledon - Earl's Court - Upminster/Edgware Road) => 2018-05-28 to 2018-05-28
+
+=====================================
+
+tfl_1-DIS-_-y05-2676115.txt has been dropped
+underground for 1-DIS-_-y05-2676115 (route: Ealing Broadway/Richmond/Wimbledon - Earl's Court - Upminster/High Street Kensington) => before to 2018-05-13
+
+=====================================
+
+tfl_1-DIS-_-y05-396211.txt has been dropped
+underground for 1-DIS-_-y05-396211 (route: Ealing Broadway/Richmond/Wimbledon - Earl's Court - Tower Hill/Edgware Road // West Ham - Upminster) => before to 2018-05-07
+
+=====================================
+
+tfl_1-DIS-_-y05-796200.txt has been added
+underground for 1-DIS-_-y05-796200 (route: South Kensington - Upminster) => 2018-05-18 to 2018-05-21
+
+=====================================
+
+tfl_1-HAM-_-y05-226200.txt has been dropped
+underground for 1-HAM-_-y05-226200 (route: Hammersmith - King's Cross St. Pancras) => before to 2018-05-07
+
+=====================================
+
+tfl_1-HAM-_-y05-386233.txt has been dropped
+underground for 1-HAM-_-y05-386233 (route: Baker Street - King's Cross St. Pancras - Barking) => before to 2018-05-14
+
+=====================================
+
+tfl_1-HAM-_-y05-465922.txt has changed (size and content: from 163741 to 139180 bytes)
+
+RS_1-HAM-_-y05-465922-I-9 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-I-16 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-I-27 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-I-32 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-I-33 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-I-34 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-28 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-29 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-30 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-31 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-35 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-36 : RouteSection has been dropped
+
+RS_1-HAM-_-y05-465922-O-37 : RouteSection has been dropped
+
+R_1-HAM-_-y05-465922-I-16 : Route has been dropped (Aldgate - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-I-27 : Route has been dropped (Edgware Road (Circle line) Station - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-I-32 : Route has been dropped (Upminster Station - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-I-33 : Route has been dropped (Barking Station - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-I-34 : Route has been dropped (Plaistow - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-I-9 : Route has been dropped (Plaistow - Hammersmith (Ham & City Line))
+
+R_1-HAM-_-y05-465922-O-28 : Route has been dropped (Hammersmith (Ham & City Line) - Edgware Road (Circle line) Station)
+
+R_1-HAM-_-y05-465922-O-29 : Route has been dropped (Hammersmith (Ham & City Line) - Moorgate Station)
+
+R_1-HAM-_-y05-465922-O-30 : Route has been dropped (Hammersmith (Ham & City Line) - Aldgate)
+
+R_1-HAM-_-y05-465922-O-31 : Route has been dropped (Goldhawk Road - King's Cross St. Pancras)
+
+R_1-HAM-_-y05-465922-O-35 : Route has been dropped (Hammersmith (Ham & City Line) - Plaistow)
+
+R_1-HAM-_-y05-465922-O-36 : Route has been dropped (Hammersmith (Ham & City Line) - Barking Station)
+
+R_1-HAM-_-y05-465922-O-37 : Route has been dropped (Hammersmith (Ham & City Line) - Upminster Station)
+
+=====================================
+
+tfl_1-JUB-_-y05-150511.txt has changed (size and content: from 44931 to 45003 bytes)
+
+9400ZZLUSTM1 : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+R_1-JUB-_-y05-150511-I-17 : Route is different
+Description changed from "Stratford Station - Stanmore" to "Stratford Station - Stanmore Station"
+
+R_1-JUB-_-y05-150511-I-21 : Route is different
+Description changed from "West Ham - Stanmore" to "West Ham - Stanmore Station"
+
+R_1-JUB-_-y05-150511-I-25 : Route is different
+Description changed from "North Greenwich - Stanmore" to "North Greenwich - Stanmore Station"
+
+R_1-JUB-_-y05-150511-I-26 : Route is different
+Description changed from "Wembley Park - Stanmore" to "Wembley Park - Stanmore Station"
+
+R_1-JUB-_-y05-150511-O-1 : Route is different
+Description changed from "Stanmore - West Ham" to "Stanmore Station - West Ham"
+
+R_1-JUB-_-y05-150511-O-10 : Route is different
+Description changed from "Stanmore - Neasden" to "Stanmore Station - Neasden"
+
+R_1-JUB-_-y05-150511-O-11 : Route is different
+Description changed from "Stanmore - North Greenwich" to "Stanmore Station - North Greenwich"
+
+R_1-JUB-_-y05-150511-O-2 : Route is different
+Description changed from "Stanmore - Stratford Station" to "Stanmore Station - Stratford Station"
+
+=====================================
+
+tfl_1-JUB-_-y05-1515205.txt has been dropped
+underground for 1-JUB-_-y05-1515205 (route: Stanmore - Waterloo - Stratford) => before to 2018-05-07
+
+=====================================
+
+tfl_1-JUB-_-y05-474022.txt has been added
+underground for 1-JUB-_-y05-474022 (route: Stanmore - Waterloo - Stratford) => 2018-05-28 to 2018-05-28
+
+=====================================
+
+tfl_1-JUB-_-y05-510200.txt has been added
+underground for 1-JUB-_-y05-510200 (route: Stanmore - Waterloo - Stratford) => 2018-05-18 to 2018-05-20
+
+=====================================
+
+tfl_1-JUB-_-y05-520522.txt has changed (size and content: from 39239 to 39311 bytes)
+
+9400ZZLUSTM1 : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+R_1-JUB-_-y05-520522-I-15 : Route is different
+Description changed from "Stratford Station - Stanmore" to "Stratford Station - Stanmore Station"
+
+R_1-JUB-_-y05-520522-I-18 : Route is different
+Description changed from "West Ham - Stanmore" to "West Ham - Stanmore Station"
+
+R_1-JUB-_-y05-520522-I-21 : Route is different
+Description changed from "North Greenwich - Stanmore" to "North Greenwich - Stanmore Station"
+
+R_1-JUB-_-y05-520522-I-22 : Route is different
+Description changed from "Wembley Park - Stanmore" to "Wembley Park - Stanmore Station"
+
+R_1-JUB-_-y05-520522-O-1 : Route is different
+Description changed from "Stanmore - West Ham" to "Stanmore Station - West Ham"
+
+R_1-JUB-_-y05-520522-O-10 : Route is different
+Description changed from "Stanmore - North Greenwich" to "Stanmore Station - North Greenwich"
+
+R_1-JUB-_-y05-520522-O-2 : Route is different
+Description changed from "Stanmore - Stratford Station" to "Stanmore Station - Stratford Station"
+
+R_1-JUB-_-y05-520522-O-9 : Route is different
+Description changed from "Stanmore - Neasden" to "Stanmore Station - Neasden"
+
+=====================================
+
+tfl_1-MET-_-y05-1187212.txt has been dropped
+underground for 1-MET-_-y05-1187212 (route: Amersham/Chesham/Uxbrige/Watford - Baker Street - Aldgate) => before to 2018-05-13
+
+=====================================
+
+tfl_1-MET-_-y05-3405622.txt has changed (size and content: from 60637 to 60637 bytes)
+
+1-MET-_-y05-3405622 : Service is different
+EndDate changed from "2018-05-19" to "2018-05-20"
+
+=====================================
+
+tfl_1-MET-_-y05-657212.txt has been dropped
+underground for 1-MET-_-y05-657212 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - King's Cross St. Pancras) => before to 2018-05-07
+
+=====================================
+
+tfl_1-MET-_-y05-777212.txt has been added
+underground for 1-MET-_-y05-777212 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - Aldgate) => 2018-05-19 to 2018-05-20
+
+=====================================
+
+tfl_1-MET-_-y05-787212.txt has been added
+underground for 1-MET-_-y05-787212 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - Aldgate) => 2018-05-26 to 2018-05-28
+
+=====================================
+
+tfl_1-MET-_-y05-9175920.txt has been dropped
+underground for 1-MET-_-y05-9175920 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - Aldgate) => before to 2018-05-08
+
+=====================================
+
+tfl_1-MET-_-y05-9175933.txt has been dropped
+underground for 1-MET-_-y05-9175933 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - Aldgate) => before to 2018-05-09
+
+=====================================
+
+tfl_1-MET-_-y05-9175934.txt has been dropped
+underground for 1-MET-_-y05-9175934 (route: Amersham/Chesham/Uxbridge/Watford - Baker Street - Aldgate) => before to 2018-05-10
+
+=====================================
+
+tfl_1-NTN-_-y05-1446101.txt has been dropped
+underground for 1-NTN-_-y05-1446101 (route: Morden - Bank/Charing Cross - Euston - Edgware/High Barnet/Mill Hill East) => before to 2018-05-07
+
+=====================================
+
+tfl_1-NTN-_-y05-626224.txt has been added
+underground for 1-NTN-_-y05-626224 (route: Morden - Kennington - Charing Cross/Moorgate // Hamsptead - Edgware) => 2018-05-25 to 2018-05-28
+
+=====================================
+
+tfl_1-PIC-_-y05-2475824.txt has been dropped
+underground for 1-PIC-_-y05-2475824 (route: Heathrow Airport/Uxbridge - Hammersmith - Cockfosters) => before to 2018-05-07
+
+=====================================
+
+tfl_1-PIC-_-y05-2475825.txt has been dropped
+underground for 1-PIC-_-y05-2475825 (route: Heathrow Airport/Uxbridge - Hammersmith - Cockfosters) => 2018-05-28 to 2018-05-28
+
+=====================================
+
+tfl_1-PIC-_-y05-2475826.txt has changed (size and content: from 180221 to 179081 bytes)
+
+9400ZZLUACT3 : StopPoint is different (Acton Town)
+Easting changed from "519484" to ""
+Northing changed from "179611" to ""
+
+9400ZZLUACT4 : StopPoint is different (Acton Town)
+Easting changed from "519489" to ""
+Northing changed from "179607" to ""
+
+9400ZZLUALP1 : StopPoint is different (Alperton)
+Easting changed from "518006" to ""
+Northing changed from "183792" to ""
+
+9400ZZLUALP2 : StopPoint is different (Alperton)
+Easting changed from "518010" to ""
+Northing changed from "183789" to ""
+
+9400ZZLUASG1 : StopPoint is different (Arnos Grove)
+Easting changed from "529353" to ""
+Northing changed from "192480" to ""
+
+9400ZZLUASL1 : StopPoint is different (Arsenal)
+Easting changed from "531280" to ""
+Northing changed from "186073" to ""
+
+9400ZZLUASL2 : StopPoint is different (Arsenal)
+Easting changed from "531292" to ""
+Northing changed from "186067" to ""
+
+9400ZZLUBDS1 : StopPoint is different (Bounds Green)
+Easting changed from "529974" to ""
+Northing changed from "191452" to ""
+
+9400ZZLUBOS1 : StopPoint is different (Boston Manor)
+Easting changed from "516399" to ""
+Northing changed from "178741" to ""
+
+9400ZZLUBOS2 : StopPoint is different (Boston Manor)
+Easting changed from "516394" to ""
+Northing changed from "178736" to ""
+
+9400ZZLUBSC3 : StopPoint is different (Barons Court)
+Easting changed from "524094" to ""
+Northing changed from "178342" to ""
+
+9400ZZLUBSC4 : StopPoint is different (Barons Court)
+Easting changed from "524101" to ""
+Northing changed from "178341" to ""
+
+9400ZZLUCAR1 : StopPoint is different (Caledonian Road Station)
+Easting changed from "530548" to ""
+Northing changed from "184993" to ""
+
+9400ZZLUCGN1 : StopPoint is different (Covent Garden Station)
+Easting changed from "530248" to ""
+Northing changed from "181016" to ""
+
+9400ZZLUCGN2 : StopPoint is different (Covent Garden Station)
+Easting changed from "530254" to ""
+Northing changed from "181009" to ""
+
+9400ZZLUCKS1 : StopPoint is different (Cockfosters)
+Easting changed from "528148" to ""
+Northing changed from "196368" to ""
+
+9400ZZLUCWP1 : StopPoint is different (Chiswick Park)
+Easting changed from "520334" to ""
+Northing changed from "178727" to ""
+
+9400ZZLUCWP2 : StopPoint is different (Chiswick Park)
+Easting changed from "520329" to ""
+Northing changed from "178728" to ""
+
+9400ZZLUEAE1 : StopPoint is different (Eastcote)
+Easting changed from "511212" to ""
+Northing changed from "187633" to ""
+
+9400ZZLUEAE2 : StopPoint is different (Eastcote)
+Easting changed from "511208" to ""
+Northing changed from "187632" to ""
+
+9400ZZLUECM1 : StopPoint is different (Ealing Common)
+Easting changed from "518890" to ""
+Northing changed from "180396" to ""
+
+9400ZZLUECM2 : StopPoint is different (Ealing Common)
+Easting changed from "518891" to ""
+Northing changed from "180390" to ""
+
+9400ZZLUECT3 : StopPoint is different (Earl's Court Station)
+Easting changed from "525494" to ""
+Northing changed from "178521" to ""
+
+9400ZZLUECT4 : StopPoint is different (Earl's Court Station)
+Easting changed from "525499" to ""
+Northing changed from "178526" to ""
+
+9400ZZLUFPK1 : StopPoint is different (Finsbury Park)
+Easting changed from "531376" to ""
+Northing changed from "186756" to ""
+
+9400ZZLUFPK2 : StopPoint is different (Finsbury Park)
+Easting changed from "531395" to ""
+Northing changed from "186754" to ""
+
+9400ZZLUGPK4 : StopPoint is different (Green Park)
+Easting changed from "529050" to ""
+Northing changed from "180324" to ""
+
+9400ZZLUGTR4 : StopPoint is different (Gloucester Road)
+Easting changed from "526220" to ""
+Northing changed from "178821" to ""
+
+9400ZZLUGTR5 : StopPoint is different (Gloucester Road)
+Easting changed from "526228" to ""
+Northing changed from "178819" to ""
+
+9400ZZLUHBN3 : StopPoint is different (Holborn Station)
+Easting changed from "530511" to ""
+Northing changed from "181455" to ""
+
+9400ZZLUHBN4 : StopPoint is different (Holborn Station)
+Easting changed from "530522" to ""
+Northing changed from "181481" to ""
+
+9400ZZLUHGD1 : StopPoint is different (Hillingdon Station)
+Easting changed from "507532" to ""
+Northing changed from "184994" to ""
+
+9400ZZLUHGD2 : StopPoint is different (Hillingdon Station)
+Easting changed from "507534" to ""
+Northing changed from "184994" to ""
+
+9400ZZLUHNX1 : StopPoint is different (Hatton Cross)
+Easting changed from "509599" to ""
+Northing changed from "175336" to ""
+
+9400ZZLUHPC1 : StopPoint is different (Hyde Park Corner)
+Easting changed from "528244" to ""
+Northing changed from "179819" to ""
+
+9400ZZLUHPC2 : StopPoint is different (Hyde Park Corner)
+Easting changed from "528240" to ""
+Northing changed from "179830" to ""
+
+9400ZZLUHR41 : StopPoint is different (Heathrow Terminal 4)
+Easting changed from "508068" to ""
+Northing changed from "174416" to ""
+
+9400ZZLUHR51 : StopPoint is different (Heathrow Terminal 5)
+Easting changed from "505238" to ""
+Northing changed from "175917" to ""
+
+9400ZZLUHRC1 : StopPoint is different (Heathrow Terminals 1-3)
+Easting changed from "507548" to ""
+Northing changed from "175876" to ""
+
+9400ZZLUHRC2 : StopPoint is different (Heathrow Terminals 1-3)
+Easting changed from "507540" to ""
+Northing changed from "175863" to ""
+
+9400ZZLUHSD3 : StopPoint is different (Hammersmith (District and Piccadilly) Station)
+Easting changed from "523435" to ""
+Northing changed from "178524" to ""
+
+9400ZZLUHSD4 : StopPoint is different (Hammersmith (District and Piccadilly) Station)
+Easting changed from "523440" to ""
+Northing changed from "178526" to ""
+
+9400ZZLUHWC1 : StopPoint is different (Hounslow Central Station)
+Easting changed from "513574" to ""
+Northing changed from "175974" to ""
+
+9400ZZLUHWE1 : StopPoint is different (Hounslow East)
+Easting changed from "514268" to ""
+Northing changed from "176236" to ""
+
+9400ZZLUHWE2 : StopPoint is different (Hounslow East)
+Easting changed from "514272" to ""
+Northing changed from "176240" to ""
+
+9400ZZLUHWT1 : StopPoint is different (Hounslow West)
+Easting changed from "512212" to ""
+Northing changed from "176176" to ""
+
+9400ZZLUHWY1 : StopPoint is different (Holloway Road Station)
+Easting changed from "530901" to ""
+Northing changed from "185465" to ""
+
+9400ZZLUICK1 : StopPoint is different (Ickenham)
+Easting changed from "508080" to ""
+Northing changed from "185913" to ""
+
+9400ZZLUICK2 : StopPoint is different (Ickenham)
+Easting changed from "508077" to ""
+Northing changed from "185908" to ""
+
+9400ZZLUKNB1 : StopPoint is different (Knightsbridge Station)
+Easting changed from "527726" to ""
+Northing changed from "179653" to ""
+
+9400ZZLUKNB2 : StopPoint is different (Knightsbridge Station)
+Easting changed from "527718" to ""
+Northing changed from "179661" to ""
+
+9400ZZLUKSX6 : StopPoint is different (King's Cross St. Pancras)
+Easting changed from "530293" to ""
+Northing changed from "183046" to ""
+
+9400ZZLUKSX7 : StopPoint is different (King's Cross St. Pancras)
+Easting changed from "530293" to ""
+Northing changed from "183052" to ""
+
+9400ZZLULSQ3 : StopPoint is different (Leicester Square)
+Easting changed from "530025" to ""
+Northing changed from "180846" to ""
+
+9400ZZLULSQ4 : StopPoint is different (Leicester Square)
+Easting changed from "530030" to ""
+Northing changed from "180838" to ""
+
+9400ZZLUMRH1 : StopPoint is different (Manor House)
+Easting changed from "532023" to ""
+Northing changed from "187427" to ""
+
+9400ZZLUNEN1 : StopPoint is different (North Ealing)
+Easting changed from "518857" to ""
+Northing changed from "181266" to ""
+
+9400ZZLUNEN2 : StopPoint is different (North Ealing)
+Easting changed from "518852" to ""
+Northing changed from "181260" to ""
+
+9400ZZLUNFD1 : StopPoint is different (Northfields)
+Easting changed from "517163" to ""
+Northing changed from "179203" to ""
+
+9400ZZLUNFD2 : StopPoint is different (Northfields)
+Easting changed from "517169" to ""
+Northing changed from "179207" to ""
+
+9400ZZLUOAK1 : StopPoint is different (Oakwood)
+Easting changed from "529379" to ""
+Northing changed from "195934" to ""
+
+9400ZZLUOSY1 : StopPoint is different (Osterley)
+Easting changed from "514548" to ""
+Northing changed from "177125" to ""
+
+9400ZZLUOSY2 : StopPoint is different (Osterley)
+Easting changed from "514545" to ""
+Northing changed from "177120" to ""
+
+9400ZZLUPCC3 : StopPoint is different (Piccadilly Circus)
+Easting changed from "529489" to ""
+Northing changed from "180593" to ""
+
+9400ZZLUPCC4 : StopPoint is different (Piccadilly Circus)
+Easting changed from "529528" to ""
+Northing changed from "180613" to ""
+
+9400ZZLUPKR1 : StopPoint is different (Park Royal)
+Easting changed from "519135" to ""
+Northing changed from "182247" to ""
+
+9400ZZLUPKR2 : StopPoint is different (Park Royal)
+Easting changed from "519136" to ""
+Northing changed from "182241" to ""
+
+9400ZZLURSM1 : StopPoint is different (Ruislip Manor Station)
+Easting changed from "510090" to ""
+Northing changed from "187238" to ""
+
+9400ZZLURSM2 : StopPoint is different (Ruislip Manor Station)
+Easting changed from "510095" to ""
+Northing changed from "187242" to ""
+
+9400ZZLURSP1 : StopPoint is different (Ruislip)
+Easting changed from "509492" to ""
+Northing changed from "187014" to ""
+
+9400ZZLURSP2 : StopPoint is different (Ruislip)
+Easting changed from "509496" to ""
+Northing changed from "187015" to ""
+
+9400ZZLURSQ1 : StopPoint is different (Russell Square)
+Easting changed from "530219" to ""
+Northing changed from "182170" to ""
+
+9400ZZLURSQ2 : StopPoint is different (Russell Square)
+Easting changed from "530220" to ""
+Northing changed from "182165" to ""
+
+9400ZZLURVP1 : StopPoint is different (Ravenscourt Park Station)
+Easting changed from "522561" to ""
+Northing changed from "178719" to ""
+
+9400ZZLURVP2 : StopPoint is different (Ravenscourt Park Station)
+Easting changed from "522566" to ""
+Northing changed from "178719" to ""
+
+9400ZZLURYL1 : StopPoint is different (Rayners Lane Station)
+Easting changed from "512953" to ""
+Northing changed from "187513" to ""
+
+9400ZZLURYL2 : StopPoint is different (Rayners Lane Station)
+Easting changed from "512957" to ""
+Northing changed from "187511" to ""
+
+9400ZZLUSEA1 : StopPoint is different (South Ealing)
+Easting changed from "517582" to ""
+Northing changed from "179375" to ""
+
+9400ZZLUSEA2 : StopPoint is different (South Ealing)
+Easting changed from "517584" to ""
+Northing changed from "179374" to ""
+
+9400ZZLUSFB1 : StopPoint is different (Stamford Brook)
+Easting changed from "521869" to ""
+Northing changed from "178803" to ""
+
+9400ZZLUSFB2 : StopPoint is different (Stamford Brook)
+Easting changed from "521876" to ""
+Northing changed from "178804" to ""
+
+9400ZZLUSGT1 : StopPoint is different (Southgate)
+Easting changed from "529678" to ""
+Northing changed from "194257" to ""
+
+9400ZZLUSHH1 : StopPoint is different (South Harrow)
+Easting changed from "514304" to ""
+Northing changed from "186358" to ""
+
+9400ZZLUSHH2 : StopPoint is different (South Harrow)
+Easting changed from "514307" to ""
+Northing changed from "186354" to ""
+
+9400ZZLUSKS2 : StopPoint is different (South Kensington)
+Easting changed from "526904" to ""
+Northing changed from "178812" to ""
+
+9400ZZLUSKS3 : StopPoint is different (South Kensington)
+Easting changed from "526911" to ""
+Northing changed from "178812" to ""
+
+9400ZZLUSUH1 : StopPoint is different (Sudbury Hill)
+Easting changed from "515392" to ""
+Northing changed from "185549" to ""
+
+9400ZZLUSUH2 : StopPoint is different (Sudbury Hill)
+Easting changed from "515398" to ""
+Northing changed from "185546" to ""
+
+9400ZZLUSUT1 : StopPoint is different (Sudbury Town Station)
+Easting changed from "516874" to ""
+Northing changed from "184889" to ""
+
+9400ZZLUSUT2 : StopPoint is different (Sudbury Town Station)
+Easting changed from "516880" to ""
+Northing changed from "184885" to ""
+
+9400ZZLUTNG1 : StopPoint is different (Turnham Green)
+Easting changed from "521260" to ""
+Northing changed from "178814" to ""
+
+9400ZZLUTNG2 : StopPoint is different (Turnham Green)
+Easting changed from "521265" to ""
+Northing changed from "178813" to ""
+
+9400ZZLUTPN1 : StopPoint is different (Turnpike Lane)
+Easting changed from "531520" to ""
+Northing changed from "189615" to ""
+
+9400ZZLUUXB1 : StopPoint is different (Uxbridge Station)
+Easting changed from "505616" to ""
+Northing changed from "184156" to ""
+
+9400ZZLUWOG1 : StopPoint is different (Wood Green Station)
+Easting changed from "530999" to ""
+Northing changed from "190423" to ""
+
+1-PIC-_-y05-2475826 : Service is different
+EndDate changed from "2018-05-21" to "2018-05-20"
+
+=====================================
+
+tfl_1-PIC-_-y05-404033.txt has been added
+underground for 1-PIC-_-y05-404033 (route: Heathrow Airport/Uxbridge - Hammersmith - Cockfosters) => 2018-05-28 to 2018-05-28
+
+=====================================
+
+tfl_1-PIC-_-y05-580811.txt has changed (size and content: from 127751 to 127751 bytes)
+
+1-PIC-_-y05-580811 : Service is different
+EndDate changed from "2018-12-23" to "2018-12-31"
+
+=====================================
+
+tfl_1-PIC-_-y05-6186816.txt has been added
+underground for 1-PIC-_-y05-6186816 (route: Heathrow Airport/Uxbridge - Hammersmith - Cockfosters) => 2018-05-21 to 2018-05-21
+
+=====================================
+
+tfl_1-VIC-_-y05-1555213.txt has been dropped
+underground for 1-VIC-_-y05-1555213 (route: Brixton - Victoria - Walthamstow Central) => before to 2018-05-07
+
+=====================================
+
+tfl_1-WAC-_-y05-1084000.txt has been dropped
+underground for 1-WAC-_-y05-1084000 (route: Waterloo - Bank) => before to 2018-05-07
+
+=====================================
+
+tfl_1-WAC-_-y05-805120.txt has been added
+underground for 1-WAC-_-y05-805120 (route: Waterloo - Bank) => 2018-05-24 to 2018-05-24
+
+=====================================
+
+tfl_1-WAC-_-y05-805280.txt has been added
+underground for 1-WAC-_-y05-805280 (route: Waterloo - Bank) => 2018-05-25 to 2018-05-28
+
+=====================================
+
+tfl_1-WAC-_-y05-9186102.txt has been added
+underground for 1-WAC-_-y05-9186102 (route: Waterloo - Bank) => 2018-05-31 to 2018-05-31
+
+=====================================
+
+tfl_1-WAC-_-y05-9186103.txt has been added
+underground for 1-WAC-_-y05-9186103 (route: Waterloo - Bank) => 2018-06-07 to 2018-06-07
+
+=====================================
+
+tfl_1-WAC-_-y05-9186104.txt has been added
+underground for 1-WAC-_-y05-9186104 (route: Waterloo - Bank) => 2018-06-14 to 2018-06-14
+
+=====================================
+
+tfl_1-WAC-_-y05-9186105.txt has been added
+underground for 1-WAC-_-y05-9186105 (route: Waterloo - Bank) => 2018-06-01 to 2018-06-02
+
+=====================================
+
+tfl_1-WAC-_-y05-9186106.txt has been added
+underground for 1-WAC-_-y05-9186106 (route: Waterloo - Bank) => 2018-06-08 to 2018-06-09
+
+=====================================
+
+tfl_1-WAC-_-y05-9186107.txt has been added
+underground for 1-WAC-_-y05-9186107 (route: Waterloo - Bank) => 2018-06-15 to 2018-06-16
+
+=====================================
+
+tfl_1-WAC-_-y05-9186108.txt has been added
+underground for 1-WAC-_-y05-9186108 (route: Waterloo - Bank) => 2018-06-21 to 2018-06-21
+
+=====================================
+
+tfl_1-WAC-_-y05-9186109.txt has been added
+underground for 1-WAC-_-y05-9186109 (route: Waterloo - Bank) => 2018-06-28 to 2018-06-28
+
+=====================================
+
+tfl_1-WAC-_-y05-9186110.txt has been added
+underground for 1-WAC-_-y05-9186110 (route: Waterloo - Bank) => 2018-07-05 to 2018-07-05
+
+=====================================
+
+tfl_1-WAC-_-y05-9186111.txt has been added
+underground for 1-WAC-_-y05-9186111 (route: Waterloo - Bank) => 2018-07-12 to 2018-07-12
+
+=====================================
+
+tfl_1-WAC-_-y05-9186112.txt has been added
+underground for 1-WAC-_-y05-9186112 (route: Waterloo - Bank) => 2018-07-19 to 2018-07-19
+
+=====================================
+
+tfl_1-WAC-_-y05-9186113.txt has been added
+underground for 1-WAC-_-y05-9186113 (route: Waterloo - Bank) => 2018-07-26 to 2018-07-26
+
+=====================================
+
+tfl_1-WAC-_-y05-9186114.txt has been added
+underground for 1-WAC-_-y05-9186114 (route: Waterloo - Bank) => 2018-08-02 to 2018-08-02
+
+=====================================
+
+tfl_1-WAC-_-y05-9186115.txt has been added
+underground for 1-WAC-_-y05-9186115 (route: Waterloo - Bank) => 2018-08-09 to 2018-08-09
+
+=====================================
+
+tfl_1-WAC-_-y05-9186116.txt has been added
+underground for 1-WAC-_-y05-9186116 (route: Waterloo - Bank) => 2018-06-22 to 2018-06-23
+
+=====================================
+
+tfl_1-WAC-_-y05-9186117.txt has been added
+underground for 1-WAC-_-y05-9186117 (route: Waterloo - Bank) => 2018-06-29 to 2018-06-30
+
+=====================================
+
+tfl_1-WAC-_-y05-9186118.txt has been added
+underground for 1-WAC-_-y05-9186118 (route: Waterloo - Bank) => 2018-07-06 to 2018-07-07
+
+=====================================
+
+tfl_1-WAC-_-y05-9186119.txt has been added
+underground for 1-WAC-_-y05-9186119 (route: Waterloo - Bank) => 2018-07-13 to 2018-07-14
+
+=====================================
+
+tfl_1-WAC-_-y05-9186120.txt has been added
+underground for 1-WAC-_-y05-9186120 (route: Waterloo - Bank) => 2018-07-20 to 2018-07-21
+
+=====================================
+
+tfl_1-WAC-_-y05-9186121.txt has been added
+underground for 1-WAC-_-y05-9186121 (route: Waterloo - Bank) => 2018-07-27 to 2018-07-28
+
+=====================================
+
+tfl_1-WAC-_-y05-9186122.txt has been added
+underground for 1-WAC-_-y05-9186122 (route: Waterloo - Bank) => 2018-08-03 to 2018-08-04
+
+=====================================
+
+tfl_1-WAC-_-y05-9186123.txt has been added
+underground for 1-WAC-_-y05-9186123 (route: Waterloo - Bank) => 2018-08-10 to 2018-08-11
+
+=====================================
+
+tfl_21-211-_-y05-46558.txt has been dropped
+bus for 21-211-_-y05-46558 (route: Hammersmith - Victoria - Waterloo) => before to 2018-05-11
+
+=====================================
+
+tfl_21-427-_-y05-49628.txt has changed (size and content: from 18715 to 18715 bytes)
+
+21-427-_-y05-49628 : Service is different
+EndDate changed from "2018-12-23" to "2018-05-18"
+
+=====================================
+
+tfl_21-427-_-y05-49932.txt has been added
+bus for 21-427-_-y05-49932 (route: Uxbridge - Hayes End - Southall - Ealing Hospital - Hanwell - West Ealing - Ealing Broadway - Ealing Common - Acton) => 2018-05-19 to 2018-12-23
+
+=====================================
+
+tfl_21-490-_-y05-49479.txt has been dropped
+bus for 21-490-_-y05-49479 (route: Richmond) => before to 2018-05-14
+
+=====================================
+
+tfl_21-490-_-y05-49480.txt has changed (size and content: from 13200 to 13200 bytes)
+
+21-490-_-y05-49480 : Service is different
+EndDate changed from "2018-12-23" to "2018-05-28"
+
+=====================================
+
+tfl_21-490-_-y05-49606.txt has been added
+bus for 21-490-_-y05-49606 (route: Richmond) => 2018-05-29 to 2018-12-23
+
+=====================================
+
+tfl_21-E7-_-y05-47544.txt has changed (size and content: from 16528 to 16528 bytes)
+
+21-E7-_-y05-47544 : Service is different
+EndDate changed from "2018-12-23" to "2018-05-25"
+
+=====================================
+
+tfl_21-E7-_-y05-49953.txt has been added
+bus for 21-E7-_-y05-49953 (route: Ruislip - Greenford - Ealing Broadway) => 2018-05-26 to 2018-12-23
+
+=====================================
+
+tfl_21-P13-_-y05-48681.txt has been dropped
+bus for 21-P13-_-y05-48681 (route: Streatham - Peckham - New Cross Gate) => before to 2018-05-06
+
+=====================================
+
+tfl_21-P13-_-y05-49776.txt has changed (size and content: from 14713 to 14713 bytes)
+
+490006336N : StopPoint is different (East Dulwich Sainsbury's)
+Easting changed from "533234" to "533224"
+Northing changed from "175458" to "175466"
+
+=====================================
+
+tfl_25-DLR-_-y05-8.txt has been dropped
+rail for 25-DLR-_-y05-8 (route: Bank/Tower Gateway/Stratford/Stratford International - Beckton/Lewisham/Woolwich Arsenal) => 2018-05-26 to 2018-05-27
+
+=====================================
+
+tfl_25-DLR-_-y05-9.txt has been added
+rail for 25-DLR-_-y05-9 (route: Bank/Tower Gateway/Stratford/Stratford International - Beckton/Lewisham/Woolwich Arsenal) => 2018-05-26 to 2018-05-27
+
+=====================================
+
+tfl_41-397-_-y05-49417.txt has changed (size and content: from 11755 to 11755 bytes)
+
+41-397-_-y05-49417 : Service is different
+EndDate changed from "2018-12-23" to "2018-06-22"
+
+=====================================
+
+tfl_41-397-_-y05-49725.txt has been added
+bus for 41-397-_-y05-49725 (route: Crooked Billet - Loughton - Debden) => 2018-06-23 to 2018-12-23
+
+=====================================
+
+tfl_45-108-_-y05-49224.txt has been dropped
+bus for 45-108-_-y05-49224 (route: Stratford - North Greenwich - Lewisham (Stratford - Canning Town // North Greenwich - Lewisham 0000-0800 Sunday)) => before to 2018-05-13
+
+=====================================
+
+tfl_45-42-_-y05-48172.txt has changed (size and content: from 12193 to 12193 bytes)
+
+490006336N : StopPoint is different (East Dulwich Sainsbury's)
+Easting changed from "533234" to "533224"
+Northing changed from "175458" to "175466"
+
+=====================================
+
+tfl_45-658-_-y05-49605.txt has changed (size and content: from 11049 to 11049 bytes)
+
+490004098E : StopPoint is different (Blendon Terrace)
+Easting changed from "544357" to "544372"
+Northing changed from "177858" to "177847"
+
+=====================================
+
+tfl_49-18-_-y05-48642.txt has been dropped
+bus for 49-18-_-y05-48642 (route: Sudbury - Wembley - Harlesden - Harrow Road - Baker Street - Euston) => before to 2018-05-11
+
+=====================================
+
+tfl_49-H91-_-y05-39510.txt has changed (size and content: from 10706 to 10702 bytes)
+
+490014417E : StopPoint is different (West Cross House)
+CommonName changed from "West Cross House" to "West Cross Way"
+
+490014417W : StopPoint is different (West Cross House)
+CommonName changed from "West Cross House" to "West Cross Way"
+Easting changed from "516780" to "516703"
+Northing changed from "177647" to "177588"
+
+=====================================
+
+tfl_49-N18-_-y05-48643.txt has been dropped
+bus for 49-N18-_-y05-48643 (route: Harrow Weald - Sudbury - Harlesden - Baker Street - Trafalgar Square) => before to 2018-05-10
+
+=====================================
+
+tfl_51-358-_-y05-47696.txt has changed (size and content: from 28778 to 28778 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_51-684-_-y05-45849.txt has changed (size and content: from 9539 to 9539 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_51-R1-_-y05-42649.txt has changed (size and content: from 12716 to 12716 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_51-R4-_-y05-48971.txt has changed (size and content: from 13113 to 13113 bytes)
+
+490001220D : StopPoint is different (Orpington Bus Station)
+Easting changed from "545546" to "545539"
+Northing changed from "165898" to "165889"
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_51-R6-_-y05-42648.txt has changed (size and content: from 6220 to 6220 bytes)
+
+490001220D : StopPoint is different (Orpington Bus Station)
+Easting changed from "545546" to "545539"
+Northing changed from "165898" to "165889"
+
+=====================================
+
+tfl_51-R8-_-y05-46638.txt has changed (size and content: from 12181 to 12181 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_51-R9-_-y05-46641.txt has changed (size and content: from 6066 to 6066 bytes)
+
+490001220D : StopPoint is different (Orpington Bus Station)
+Easting changed from "545546" to "545539"
+Northing changed from "165898" to "165889"
+
+=====================================
+
+tfl_54-207-N-y05-49630.txt has been dropped
+bus for 54-207-N-y05-49630 (route: Uxbridge - Hayes - Ealing - Shepherds Bush - Holborn) => before to 2018-05-10
+
+=====================================
+
+tfl_54-207-_-y05-47969.txt has been dropped
+bus for 54-207-_-y05-47969 (route: Hayes - Ealing Broadway - White City) => before to 2018-05-11
+
+=====================================
+
+tfl_54-209-_-y05-46566.txt has been dropped
+bus for 54-209-_-y05-46566 (route: Mortlake - Barnes Bridge Station - Barnes - Castlenau - Hammersmith) => before to 2018-05-11
+
+=====================================
+
+tfl_54-307-_-y05-49296.txt has changed (size and content: from 12646 to 12646 bytes)
+
+490010815E : StopPoint is different (Park Road_ East Barnet)
+Easting changed from "527428" to "527427"
+Northing changed from "195546" to "195545"
+
+=====================================
+
+tfl_54-324-_-y05-49452.txt has changed (size and content: from 12012 to 12044 bytes)
+
+490000219A : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+490000219N : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+Easting changed from "517629" to "517582"
+Northing changed from "192567" to "192575"
+
+R_54-324-_-y05-49452-I-2 : Route is different
+Description changed from "Tesco Brent Cross - Stanmore" to "Tesco Brent Cross - Stanmore Station"
+
+R_54-324-_-y05-49452-O-1 : Route is different
+Description changed from "Stanmore - Tesco Brent Cross" to "Stanmore Station - Tesco Brent Cross"
+
+=====================================
+
+tfl_54-609-_-y05-46763.txt has been dropped
+bus for 54-609-_-y05-46763 (route: Harrodian School - Hammersmith) => before to 2018-05-11
+
+=====================================
+
+tfl_54-95-_-y05-46580.txt has changed (size and content: from 13938 to 13938 bytes)
+
+54-95-_-y05-46580 : Service is different
+EndDate changed from "2018-12-23" to "2018-05-18"
+
+=====================================
+
+tfl_54-95-_-y05-50022.txt has been added
+bus for 54-95-_-y05-50022 (route: Southall Town Hall - Park Royal - Shepherd's Bush) => 2018-05-19 to 2018-12-23
+
+=====================================
+
+tfl_54-E2-_-y05-39735.txt has changed (size and content: from 9312 to 9312 bytes)
+
+490012682S : StopPoint is different (St Faith's Church)
+Easting changed from "517417" to "517437"
+Northing changed from "178246" to "178229"
+
+=====================================
+
+tfl_54-H12-_-y05-49458.txt has changed (size and content: from 13055 to 13087 bytes)
+
+490000219A : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+490000219N : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+Easting changed from "517629" to "517582"
+Northing changed from "192567" to "192575"
+
+R_54-H12-_-y05-49458-I-2 : Route is different
+Description changed from "South Harrow Bus Station - Stanmore" to "South Harrow Bus Station - Stanmore Station"
+
+R_54-H12-_-y05-49458-O-1 : Route is different
+Description changed from "Stanmore - South Harrow Bus Station" to "Stanmore Station - South Harrow Bus Station"
+
+=====================================
+
+tfl_54-N98-_-y05-49664.txt has changed (size and content: from 24208 to 24240 bytes)
+
+490000219A : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+490000219N : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+Easting changed from "517629" to "517582"
+Northing changed from "192567" to "192575"
+
+R_54-N98-_-y05-49664-I-3 : Route is different
+Description changed from "Red Lion Square - Stanmore" to "Red Lion Square - Stanmore Station"
+
+R_54-N98-_-y05-49664-O-2 : Route is different
+Description changed from "Stanmore - Red Lion Square" to "Stanmore Station - Red Lion Square"
+
+=====================================
+
+tfl_59-178-_-y05-48852.txt has changed (size and content: from 10658 to 10658 bytes)
+
+59-178-_-y05-48852 : Service is different
+EndDate changed from "2018-12-23" to "2018-06-01"
+
+=====================================
+
+tfl_59-178-_-y05-48869.txt has been added
+bus for 59-178-_-y05-48869 (route: Woolwich - Queen Elizabeth Hospital - Lewisham) => 2018-06-02 to 2018-12-23
+
+=====================================
+
+tfl_59-51-_-y05-47655.txt has changed (size and content: from 33876 to 33876 bytes)
+
+490004098E : StopPoint is different (Blendon Terrace)
+Easting changed from "544357" to "544372"
+Northing changed from "177858" to "177847"
+
+=====================================
+
+tfl_59-53-_-y05-49033.txt has changed (size and content: from 16903 to 16903 bytes)
+
+490004098E : StopPoint is different (Blendon Terrace)
+Easting changed from "544357" to "544372"
+Northing changed from "177858" to "177847"
+
+=====================================
+
+tfl_59-R10-_-y05-46673.txt has changed (size and content: from 13641 to 13641 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_59-R5-_-y05-46672.txt has changed (size and content: from 12218 to 12218 bytes)
+
+490001220E : StopPoint is different (Orpington Bus Station)
+Easting changed from "545536" to "545537"
+Northing changed from "165903" to "165904"
+
+=====================================
+
+tfl_60-158-_-y05-48468.txt has changed (size and content: from 13438 to 13438 bytes)
+
+490003328U : StopPoint is different (Angel Lane)
+Easting changed from "538782" to "538759"
+Northing changed from "184576" to "184556"
+
+=====================================
+
+tfl_60-241-_-y05-49597.txt has been dropped
+bus for 60-241-_-y05-49597 (route: Stratford City - Plaistow - Custom House - Keir Hardie Estate - Canning Town) => before to 2018-12-23
+
+=====================================
+
+tfl_60-241-_-y05-50016.txt has been added
+bus for 60-241-_-y05-50016 (route: Stratford City - Plaistow - Custom House - Keir Hardie Estate - Canning Town) => before to 2018-12-23
+
+=====================================
+
+tfl_60-248-_-y05-45587.txt has been dropped
+bus for 60-248-_-y05-45587 (route: Romford - Upminster - Cranham) => before to 2018-05-12
+
+=====================================
+
+tfl_60-277-_-y05-48932.txt has been dropped
+bus for 60-277-_-y05-48932 (route: Highbury Corner - Dalston - Hackney - Victoria Park - Mile End - Canary Wharf - Mudchute - Crossharbour) => before to 2018-05-10
+
+=====================================
+
+tfl_60-678-_-y05-49917.txt has been dropped
+bus for 60-678-_-y05-49917 (route: Stratford - Upton Lane - Plaistow - Prince Regent - Cyprus - Beckton) => before to 2018-12-21
+
+=====================================
+
+tfl_60-678-_-y05-50019.txt has been added
+bus for 60-678-_-y05-50019 (route: Stratford - Upton Lane - Plaistow - Prince Regent - Cyprus - Beckton) => before to 2018-12-21
+
+=====================================
+
+tfl_61-142-_-y05-45743.txt has changed (size and content: from 17313 to 17329 bytes)
+
+490000219A : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+490000219B : StopPoint is different (Stanmore)
+CommonName changed from "Stanmore" to "Stanmore Station"
+
+=====================================
+
+tfl_64-308-_-y05-46140.txt has changed (size and content: from 11887 to 11887 bytes)
+
+490003328U : StopPoint is different (Angel Lane)
+Easting changed from "538782" to "538759"
+Northing changed from "184576" to "184556"
+
+=====================================
+
+tfl_8-319-_-y05-46393.txt has been added
+bus for 8-319-_-y05-46393 (route: Streatham Hill - Clapham Junction - Sloane Square) => 2018-06-02 to 2018-12-23
+
+=====================================
+
+tfl_8-319-_-y05-48546.txt has changed (size and content: from 36729 to 36729 bytes)
+
+8-319-_-y05-48546 : Service is different
+EndDate changed from "2018-12-23" to "2018-06-01"
+
+=====================================
+
+tfl_8-325-_-y05-46588.txt has been dropped
+bus for 8-325-_-y05-46588 (route: East Beckton - East Ham - Prince Regent) => before to 2018-12-23
+
+=====================================
+
+tfl_8-325-_-y05-50017.txt has been added
+bus for 8-325-_-y05-50017 (route: East Beckton - East Ham - Prince Regent) => before to 2018-12-23
+
+=====================================
+
+
+Comparison complete
+==========================================
+
