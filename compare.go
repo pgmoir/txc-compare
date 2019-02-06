@@ -20,14 +20,22 @@ func CompareFiles(txcs []TxcFile) {
 
 	ct, lfi, pfi := len(lfs)+len(pfs), 0, 0
 	for ct > 0 {
-		lf := lfs[lfi]
-		pf := pfs[pfi]
-		if lf.Name() < pf.Name() {
+		if len(pfs) < pfi + 1 {
+			lf := lfs[lfi]
 			FileAddedToTxc(ltxc, lf.Name(), &ct, &lfi)
-		} else if lf.Name() > pf.Name() {
+		} else if len(lfs) < lfi + 1 {
+			pf := pfs[pfi]
 			FileDroppedFromTxc(ptxc, pf.Name(), &ct, &pfi)
 		} else {
-			CompareMatchedFilesInTxc(ltxc, ptxc, lf, pf, &ct, &lfi, &pfi)
+			lf := lfs[lfi]
+			pf := pfs[pfi]
+			if lf.Name() < pf.Name() {
+				FileAddedToTxc(ltxc, lf.Name(), &ct, &lfi)
+			} else if lf.Name() > pf.Name() {
+				FileDroppedFromTxc(ptxc, pf.Name(), &ct, &pfi)
+			} else {
+				CompareMatchedFilesInTxc(ltxc, ptxc, lf, pf, &ct, &lfi, &pfi)
+			}	
 		}
 	}
 	fmt.Println("Finished")
